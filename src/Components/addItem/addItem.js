@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export default class AddItem extends Component {
@@ -26,15 +27,18 @@ export default class AddItem extends Component {
              this.setState({
                  inputValue: ""
              });
-             alert('Item was created.')
+             alert('Topic was created was created.')
          }
     };
     render =()=>{
         return (
-            <form onSubmit={this.formHandler} className="addItemForm">
-                <input type="text" className="addItemForm--inputForm" placeholder="New item title.." value={this.state.inputValue} onChange={this.handleChange.bind(this)}/>
-                <button type="submit" className="addItemForm--submit">&gt;</button>
-            </form>
+            <div className="form">
+                <form onSubmit={this.formHandler} className="addItemForm">
+                    <input type="text" className="addItemForm--inputForm" placeholder="New topic title.." value={this.state.inputValue} onChange={this.handleChange.bind(this)}/>
+                    <button type="submit" className="addItemForm--submit">Create topic</button>
+                    <Link to="/"><button className="go-back">Go to the main page</button></Link>
+                </form>
+            </div>
         )
     }
 }
