@@ -1,0 +1,49 @@
+.item{
+    overflow-x: hidden;
+}
+.category{
+    padding: 25px 13px;
+    border-bottom: 1px solid #e0e0d1;
+    position: relative;
+}
+.categoryTitle{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.itemsList{
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+}
+.itemsList--commentsAmount{
+    background-color: #313464;
+    border-radius: 50%;
+    width: 20px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+.itemsList--deleteItem{
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 100px;
+    z-index: 2;
+    height: 69px;
+    transition-duration: 0.3s;
+    background-color: #d4145a;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.category:hover .itemsList--deleteItem{
+    right: 0;
+}

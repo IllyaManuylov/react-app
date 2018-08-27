@@ -1,0 +1,27 @@
+.header {
+    background-color: #0e1d3c;
+    height: 50px;
+    padding: 20px;
+    color: white;
+}
+.header--title {
+    margin: 0;
+}
+.activeHeader{
+    display: flex;
+}
+.header--link{
+    height: 23px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.header--button{
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #313464;
+    color: #fff;
+}

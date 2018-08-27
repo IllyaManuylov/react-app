@@ -1,0 +1,26 @@
+.commentForm{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #e6e6e6;
+    padding: 15px 0;
+}
+.commentForm--input{
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    height: 20px;
+    padding: 5px;
+}
+.commentForm--submit{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #313464;
+    color: #fff;
+}
