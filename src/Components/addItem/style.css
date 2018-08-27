@@ -1,8 +1,15 @@
-.addItemForm{
-    margin-top: 20px;
+.form{
+    position: absolute;
+    width: 100%;
+    top: 50%;
     text-align: center;
 }
+.addItemForm{
+    max-width: 360px;
+    margin: 0 auto;
+}
 .addItemForm--inputForm{
+    width: 100%;
     border: none;
     border-bottom: 1px solid #333333;
     color: #333333;
@@ -12,11 +19,19 @@
 .addItemForm--submit{
     background-color: #313464;
     color: #fff;
-    border-radius: 50%;
     border: none;
     outline: none;
     height: 25px;
-    width: 25px;
-    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.go-back {
+    background-color: #d4145a;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    color: #fff;
     cursor: pointer;
 }

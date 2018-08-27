@@ -12,7 +12,7 @@ class NewItemPage extends Component {
         let currItem = this.props.match.params.currentItem;
         return (
             <div className="App">
-                <ActiveHeader headerTitle="Create new Item"/>
+                <ActiveHeader headerTitle="Create new Topic"/>
                 <AddItem addItem = {addItem} items = {items}/>
             </div>
         );

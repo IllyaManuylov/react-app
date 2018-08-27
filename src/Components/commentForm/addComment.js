@@ -34,7 +34,7 @@ export default class AddComment extends Component {
         return (
             <form  onSubmit={this.handler} className="commentForm">
                 <input type="text" className="commentForm--input" placeholder="New comment goes here.." value={this.state.inputValue} onChange={this.handleChange.bind(this)}/>
-                <button type="submit" className="commentForm--submit">&gt;</button>
+                <button type="submit" className="commentForm--submit">Add comment</button>
             </form>
         )
     }

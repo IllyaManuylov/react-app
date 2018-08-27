@@ -15,7 +15,7 @@ class CommentPage extends Component {
         return (
 
             <div>
-                <ActiveHeader headerTitle={items[currItem].name}/>
+                <ActiveHeader headerTitle={`Topic ${items[currItem].name}`}/>
                 <Comment items = {items} comments = {comments} currItem = {currItem}/>
                 <AddComment addComment = {addComment} items = {items} comments = {comments} currItem = {currItem} />
             </div>
